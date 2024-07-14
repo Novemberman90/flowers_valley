@@ -1,0 +1,64 @@
+ @font-face {
+  font-family: 'Lora-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: local('Lora-Regular'),
+    url('../fonts/Lora-Regular.woff2') format('woff2'),
+    url('../fonts/Lora-Regular.woff') format('woff');
+  font-display: swap;
+}
+ 
+@font-face {
+  font-family: 'Lora-Italic';
+  font-weight: 400;
+  font-style: italic;
+  src: local('Lora-Italic'),
+    url('../fonts/Lora-Italic.woff2') format('woff2'),
+    url('../fonts/Lora-Italic.woff') format('woff');
+  font-display: swap;
+}
+ @font-face {
+  font-family: 'Lora-Medium';
+  font-weight: 500;
+  font-style: normal;
+  src: local('Lora-Medium'),
+    url('../fonts/Lora-Medium.woff2') format('woff2'),
+    url('../fonts/Lora-Medium.woff') format('woff');
+  font-display: swap;
+}
+ @font-face {
+  font-family: 'Lora-MediumItalic';
+  font-weight: 500;
+  font-style: italic;
+  src: local('Lora-MediumItalic'),
+    url('../fonts/Lora-MediumItalic.woff2') format('woff2'),
+    url('../fonts/Lora-MediumItalic.woff') format('woff');
+  font-display: swap;
+}
+ @font-face {
+  font-family: 'Manrope-Light';
+  font-weight: 300;
+  font-style: normal;
+  src: local('Manrope-Light'),
+    url('../fonts/Manrope-Light.woff2') format('woff2'),
+    url('../fonts/Manrope-Light.woff') format('woff');
+  font-display: swap;
+}
+ @font-face {
+  font-family: 'Manrope-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: local('Manrope-Regular'),
+    url('../fonts/Manrope-Regular.woff2') format('woff2'),
+    url('../fonts/Manrope-Regular.woff') format('woff');
+  font-display: swap;
+}
+ @font-face {
+  font-family: 'Manrope-Medium';
+  font-weight: 500;
+  font-style: normal;
+  src: local('Manrope-Medium'),
+    url('../fonts/Manrope-Medium.woff2') format('woff2'),
+    url('../fonts/Manrope-Medium.woff') format('woff');
+  font-display: swap;
+}
