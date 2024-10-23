@@ -29,10 +29,13 @@
     font-size: 16px;
     line-height: 22px;
     color: $text;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
   }
 }
 .menu {
+  &__btn {
+    display: none;
+  }
   &__list {
     display: flex;
   }
@@ -74,14 +77,19 @@
 .user-nav {
   display: flex;
   align-items: center;
-  &__link {
+  &__link-box {
     margin-right: 60px;
+  }
+  &__link {
     font-size: 22px;
     line-height: 32px;
     color:$text;
     @extend %manrope-300;
     span {
       color: $accent;
+    }
+    & + .user-nav__link {
+      margin-left: 60px;
     }
   }
   &__box {
@@ -90,6 +98,7 @@
   }
   &__box-link {
     display: block;
+    width: 50px;
     height: 50px;
     &:hover{
       svg {
@@ -307,7 +316,7 @@
     &::before {
       position: absolute;
       content:'';
-      background-image: url('../images/about-decor.svg');
+      background-image: url('../images/icon/about-decor.svg');
       width: 12px;
       height: 24px;
       top: 0;
@@ -375,7 +384,7 @@
     &::after {
       position: absolute;
       content: '';
-      background-image: url('../images/howtowork-icon.svg');
+      background-image: url('../images/icon/howtowork-icon.svg');
       width: 15px;
       height: 30px;
       right: -40px;
@@ -486,7 +495,7 @@
     &::after {
       position: absolute;
       content:'';
-      background-image: url('../images/arrow-link-white.svg');
+      background-image: url('../images/icon/arrow-link-white.svg');
       width: 24px;
       height: 18px;
       right: 21px;
@@ -588,7 +597,7 @@
     &::after{
       position: absolute;
       content:'';
-      background-image: url('../images/arrow-link.svg');
+      background-image: url('../images/icon/arrow-link.svg');
       width: 24px;
       height: 18px;
       right: 30px;
@@ -614,7 +623,7 @@
     &::after {
       position: absolute;
       content:'';
-      background-image: url('../images/“.svg');
+      background-image: url('../images/icon/“.svg');
       height: 30px;
       width: 30px;
       bottom: 60px;
@@ -719,7 +728,7 @@
     &::after {
       position: absolute;
       content:'';
-      background-image: url('../images/arrow-link.svg');
+      background-image: url('../images/icon/arrow-link.svg');
       width: 24px;
       height: 18px;
       right: 30px;
@@ -859,7 +868,7 @@
     &::before {
       position: absolute;
       content:'';
-      background-image: url('../images/map-marker.svg');
+      background-image: url('../images/icon/map-marker.svg');
       width: 32px;
       height: 32px;
       top: 0;
@@ -897,17 +906,17 @@
   }
   &__link-walking {
     &::before{
-      background-image: url('../images/walking.svg');
+      background-image: url('../images/icon/walking.svg');
     }
   }
   &__link-car {
     &::before{
-      background-image: url('../images/car.svg');
+      background-image: url('../images/icon/car.svg');
     }
   }
   &__link-bus {
     &::before{
-      background-image: url('../images/bus.svg');
+      background-image: url('../images/icon/bus.svg');
     }
   }
   &__box {
@@ -934,7 +943,7 @@
     &::before {
       position: absolute;
       content: '';
-      background-image: url('../images/email.svg');
+      background-image: url('../images/icon/email.svg');
       top: 0;
       left: 0;
       width: 32px;
@@ -986,7 +995,7 @@
     &::before {
       position: absolute;
       content:'';
-      background-image: url('../images/about-decor.svg');
+      background-image: url('../images/icon/about-decor.svg');
       width: 12px;
       height: 24px;
       top: 0;

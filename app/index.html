@@ -21,7 +21,7 @@
 <header class="header">
   <div class="header__inner">
     <a class="header__logo" href="#">
-      <img src="images/logo.svg" alt="logo">
+      <img src="./images/icon/logo.svg" alt="logo">
       <div class="header__box">
         <h4 class="header__title">
           The <span>Flower Garden</span>
@@ -30,6 +30,9 @@
       </div>
     </a>
     <nav class="menu">
+      <button class="menu__btn" type="button">
+        <span></span>
+      </button>
       <ul class="menu__list">
         <li class="menu__list-item">
           <a class="menu__list-item-link menu__list-item-link--active" href="#about">About Us</a>
@@ -43,8 +46,10 @@
       </ul>
     </nav>
     <div class="user-nav">
-      <a class="user-nav__link" href="tel:+2158087576"><span>(215)</span> 808-7576</a>
-      <a class="user-nav__link" href="mailto:info@theflowersvalley.com">info@theflowersvalley.com</a>
+      <div class="user-nav__link-box">
+        <a class="user-nav__link user-nav__link--tel" href="tel:+2158087576"><span>(215)</span> 808-7576</a>
+        <a class="user-nav__link user-nav__link--email" href="mailto:info@theflowersvalley.com">info@theflowersvalley.com</a>
+      </div>
       <div class="user-nav__box">
         <a class="user-nav__box-link" href="#">
           <svg width="50.000000" height="50.000000" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +76,7 @@
   </div>
 </header>
 <main class="main">
-  <section class="top-slider">
+<!--   <section class="top-slider">
     <div class="container">
       <div class="top-slider__box">
         <h2 class="top-slider__box-title">
@@ -85,7 +90,7 @@
 
     <div class="top-slider__inner">
       <div class="top-slider__item">
-        <img class="top-slider__img" src="images/1.webp" alt="slide images one">
+        <img class="top-slider__img" src="./images/content/top-slider/1.webp" alt="slide images one">
         <div class="top-slider__content">
           <div class="top-slider__content-box">
             <h4 class="top-slider__title">
@@ -96,7 +101,7 @@
         </div>
       </div>
       <div class="top-slider__item">
-        <img class="top-slider__img" src="images/2.webp" alt="slide images one">
+        <img class="top-slider__img" src="./images/content/top-slider/2.webp" alt="slide images one">
         <div class="top-slider__content">
           <div class="top-slider__content-box">
             <h4 class="top-slider__title">
@@ -107,7 +112,7 @@
         </div>
       </div>
       <div class="top-slider__item">
-        <img class="top-slider__img" src="images/3.webp" alt="slide images one">
+        <img class="top-slider__img" src="./images/content/top-slider/3.webp" alt="slide images one">
         <div class="top-slider__content">
           <div class="top-slider__content-box">
             <h4 class="top-slider__title">
@@ -118,13 +123,13 @@
         </div>
       </div>
     </div>
-  </section>
-  <section class="about" id="about">
+  </section> -->
+<!--   <section class="about" id="about">
     <div class="container-fluid">
     <h2 class="about__title title">Our <span>services</span></h2>
       <div class="about__items">
         <div class="about__item">
-          <img class="about__item-img" src="images/about-1.webp" alt="about img">
+          <img class="about__item-img" src="./images/content/about-1.webp" alt="about img">
           <div class="about__item-box">
             <h4 class="about__item-title">Decor for weddings</h4>
             <p class="about__item-text">The Flowers Valley creates personalized and impressive decor for weddings, anniversaries, and corporate events in San
@@ -132,7 +137,7 @@
           </div>
         </div>
         <div class="about__item">
-          <img class="about__item-img" src="images/about-2.webp" alt="about img">
+          <img class="about__item-img" src="./images/content/about-2.webp" alt="about img">
           <div class="about__item-box">
             <h4 class="about__item-title">Anniversaries</h4>
             <p class="about__item-text">The Flowers Valley creates personalized and impressive decor for weddings, anniversaries, and corporate events in San
@@ -140,7 +145,7 @@
           </div>
         </div>
         <div class="about__item">
-          <img class="about__item-img" src="images/about-3.webp" alt="about img">
+          <img class="about__item-img" src="./images/content/about-3.webp" alt="about img">
           <div class="about__item-box">
             <h4 class="about__item-title">Сorporate events</h4>
             <p class="about__item-text">The Flowers Valley creates personalized and impressive decor for weddings, anniversaries, and corporate events in San
@@ -148,7 +153,7 @@
           </div>
         </div>
       </div>
-      <img class="about__img" src="images/about-big.webp" alt="about img">
+      <img class="about__img" src="./images/content/about-big.webp" alt="about img">
       <div class="about__content">
         <ul class="about__list">
           <li class="about__list-item">Bridal bouquet</li>
@@ -173,8 +178,8 @@
         </ul>
       </div>
     </div>
-  </section>
-  <section class="howtowork">
+  </section> -->
+<!--   <section class="howtowork">
     <h2 class="howtowork__title title">How we <span>work</span></h2>
     <div class="container">
       <ol class="howtowork__list">
@@ -198,8 +203,8 @@
         </li>
       </ol>
     </div>
-  </section>
-  <section class="together">
+  </section> -->
+<!--   <section class="together">
     <div class="container">
       <div class="together__inner">
         <div class="together__content">
@@ -227,7 +232,7 @@
             </li>
           </ul>
         </div>
-        <div class="together__form-box" style="background-image: url('images/form-bg.webp');">
+        <div class="together__form-box" style="background-image: url('./images/content/form-bg.webp');">
           <form class="together__form" action="#">
             <h3 class="together__form-title">Let's get in touch, <span>shall we?</span></h3>
             <label class="together__form-label">
@@ -247,39 +252,39 @@
       </div>
     </div>
     
-  </section>
-  <section class="choose">
+  </section> -->
+<!--   <section class="choose">
     <div class="container">
       <h2 class="choose__title title">Why people choose us to <span>organize their celebration</span></h2>
       <div class="choose__inner">
         <div class="choose__item">
-          <img class="choose__item-img" src="images/choose-1.svg" alt="choose image">
+          <img class="choose__item-img" src="./images/icon/choose-1.svg" alt="choose image">
           <p class="choose__item-text">We organize and conduct weddings for more than 15 years</p>
         </div>
         <div class="choose__item">
-          <img class="choose__item-img" src="images/choose-2.svg" alt="choose image">
+          <img class="choose__item-img" src="./images/icon/choose-2.svg" alt="choose image">
           <p class="choose__item-text">We love people and we are always responsible for the result</p>
         </div>
         <div class="choose__item">
-          <img class="choose__item-img" src="images/choose-3.svg" alt="choose image">
+          <img class="choose__item-img" src="./images/icon/choose-3.svg" alt="choose image">
           <p class="choose__item-text">Our team is constantly learning and developing</p>
         </div>
         <div class="choose__item">
-          <img class="choose__item-img" src="images/choose-4.svg" alt="choose image">
+          <img class="choose__item-img" src="./images/icon/choose-4.svg" alt="choose image">
           <p class="choose__item-text">We have a wedding decor studio with our own production</p>
         </div>
         <div class="choose__item">
-          <img class="choose__item-img" src="images/choose-5.svg" alt="choose image">
+          <img class="choose__item-img" src="./images/icon/choose-5.svg" alt="choose image">
           <p class="choose__item-text">We can organize a wedding and create a unique decor in a short time</p>
         </div>
         <div class="choose__item">
-          <img class="choose__item-img" src="images/choose-6.svg" alt="choose image">
+          <img class="choose__item-img" src="./images/icon/choose-6.svg" alt="choose image">
           <p class="choose__item-text">24/7 staff: florists, decorators, designers, installers, technicians, and managers.</p>
         </div>
       </div>
     </div>
-  </section>
-  <section class="reviews">
+  </section> -->
+<!--   <section class="reviews">
     <div class="container">
       <h2 class="reviews__title title-left">Wedding Florist <span>Los Angeles</span></h2>
       <div class="reviews__box">
@@ -304,9 +309,9 @@
         </div>
         <div class="reviews__item reviews__item-video">
           <div class="reviews__item-video-inner">
-            <div class="reviews__video-popup" style="background-image: url('images/review-img.webp');">
+            <div class="reviews__video-popup" style="background-image: url('./images/content/review-img.webp');">
               <a class="reviews__video-link" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
-                <img src="images/play.svg" alt="video play button">
+                <img src="./images/icon/play.svg" alt="video play button">
               </a>
             </div>
             <div class="reviews__item-video-box">
@@ -327,8 +332,8 @@
         </div>
       
     </div>
-  </section>
-  <section class="gallery" id="gallery">
+  </section> -->
+<!--   <section class="gallery" id="gallery">
     <div class="container">
       <div class="gallery__top-box">
         <h2 class="gallery__title title-left">Follow us <span>on Instagram</span></h2>
@@ -336,7 +341,7 @@
       </div>
       <div class="gallery__content">
         <div class="gallery__item">
-          <img src="images/gallery-1.webp" alt="gallery image">
+          <img src="./images/gallery/gallery-1.webp" alt="gallery image">
           <a class="gallery__item-link" href="#">
             <svg width="50.910461" height="50.112793" viewBox="0 0 50.9105 50.1128" fill="none" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -374,7 +379,7 @@
           </a>
         </div>
         <div class="gallery__item">
-          <img src="images/gallery-2.webp" alt="gallery image">
+          <img src="./images/gallery/gallery-2.webp" alt="gallery image">
           <a class="gallery__item-link" href="#">
             <svg width="50.910461" height="50.112793" viewBox="0 0 50.9105 50.1128" fill="none" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -412,7 +417,7 @@
           </a>
         </div>
         <div class="gallery__item">
-          <img src="images/gallery-3.webp" alt="gallery image">
+          <img src="./images/gallery/gallery-3.webp" alt="gallery image">
           <a class="gallery__item-link" href="#">
             <svg width="50.910461" height="50.112793" viewBox="0 0 50.9105 50.1128" fill="none" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -450,7 +455,7 @@
           </a>
         </div>
         <div class="gallery__item">
-          <img src="images/gallery-4.webp" alt="gallery image">
+          <img src="./images/gallery/gallery-4.webp" alt="gallery image">
           <a class="gallery__item-link" href="#">
             <svg width="50.910461" height="50.112793" viewBox="0 0 50.9105 50.1128" fill="none" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -488,7 +493,7 @@
           </a>
         </div>
         <div class="gallery__item">
-          <img src="images/gallery-5.webp" alt="gallery image">
+          <img src="./images/gallery/gallery-5.webp" alt="gallery image">
           <a class="gallery__item-link" href="#">
             <svg width="50.910461" height="50.112793" viewBox="0 0 50.9105 50.1128" fill="none" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -526,7 +531,7 @@
           </a>
         </div>
         <div class="gallery__item">
-          <img src="images/gallery-6.webp" alt="gallery image">
+          <img src="./images/gallery/gallery-6.webp" alt="gallery image">
           <a class="gallery__item-link" href="#">
             <svg width="50.910461" height="50.112793" viewBox="0 0 50.9105 50.1128" fill="none" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -564,7 +569,7 @@
           </a>
         </div>
         <div class="gallery__item">
-          <img src="images/gallery-7.webp" alt="gallery image">
+          <img src="./images/gallery/gallery-7.webp" alt="gallery image">
           <a class="gallery__item-link" href="#">
             <svg width="50.910461" height="50.112793" viewBox="0 0 50.9105 50.1128" fill="none" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -602,7 +607,7 @@
           </a>
         </div>
         <div class="gallery__item">
-          <img src="images/gallery-8.webp" alt="gallery image">
+          <img src="./images/gallery/gallery-8.webp" alt="gallery image">
           <a class="gallery__item-link" href="#">
             <svg width="50.910461" height="50.112793" viewBox="0 0 50.9105 50.1128" fill="none" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -642,13 +647,13 @@
       </div>
     </div>
     
-  </section>
-  <section class="art">
+  </section> -->
+<!--   <section class="art">
     <div class="container">
       <h2 class="art__title title-left">The Art <span>of Floristry</span></h2>
       <div class="art__inner">
         <div class="art__item">
-          <img class="art__item-img" src="images/art-1.webp" alt="art image">
+          <img class="art__item-img" src="./images/content/art-1.webp" alt="art image">
           <div class="art__item-box">
             <h4 class="art__box-title">The Importance of Color, Texture, and Composition</h4>
             <p class="art__box-text">
@@ -660,7 +665,7 @@
           </div>
         </div>
         <div class="art__item">
-          <img class="art__item-img" src="images/art-2.webp" alt="art image">
+          <img class="art__item-img" src="./images/content/art-2.webp" alt="art image">
           <div class="art__item-box">
             <h4 class="art__box-title">Catering to a Diverse Range of Clients</h4>
             <ul class="art__list">
@@ -681,8 +686,8 @@
         </div>
       </div>
     </div>
-  </section>
-  <section class="contact" id="contact">
+  </section> -->
+<!--   <section class="contact" id="contact">
     <div class="container">
       <div class="contact__inner">
         <div class="contact__content">
@@ -703,9 +708,9 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 </main>
-<footer class="footer">
+<!-- <footer class="footer">
   <div class="container">
     <div class="footer__inner">
       <div class="footer__item">
@@ -758,7 +763,7 @@
       <p>Coded by <a href="https://www.weblancer.net/users/November_Man/">Alexey Ivashchenko</a></p>
     </div>
   </div>
-</footer>
+</footer> -->
 <script async src="https://maps.googleapis.com/maps/api/js?callback=initMap" defer>
 </script>
 <script>

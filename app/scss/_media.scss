@@ -1,0 +1,261 @@
+@media (max-width: 1400px) {
+  .menu {
+    &__list-item {
+      &+.menu__list-item {
+        margin-left: 25px;
+      }
+    }
+  }
+  .user-nav {
+    &__link-box {
+      margin-right: 20px;
+    }
+    &__link {
+      & + .user-nav__link {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 1180px) {
+  .header {
+    &__title {
+      font-size: 18px;
+    }
+  }
+  .menu {
+    &__list-item {
+      &+.menu__list-item {
+        margin-left: 15px;
+      }
+    }
+  }
+  .user-nav {
+    &__link-box {
+      margin-right: 15px;
+    }
+    &__link {
+      font-size: 18px;
+      &+.user-nav__link {
+        margin-left: 15px;
+      }
+    }
+    &__box {
+      gap: 10px;
+    }
+  }
+}
+@media (max-width: 990px) {
+  .header {
+    &__inner {
+      padding: 20px 20px;
+    }
+    &__title {
+      font-size: 16px;
+      line-height: 1.2;
+    }
+    &__subtitle {
+      line-height: 1.2;
+    }
+  }
+  .menu {
+    &__list-item {
+      &+.menu__list-item {
+        margin-left: 10px;
+      }
+    }
+    &__list-item-link {
+      font-size: 16px;
+      line-height: 1.2;
+    }
+  }
+  .user-nav {
+    &__link-box {
+      margin-right: 10px;
+    }
+    &__link {
+      font-size: 16px;
+      line-height: 1.2;
+      &+.user-nav__link {
+        margin-left: 10px;
+      }
+    }
+    &__box-link {
+      width: 40px;
+      height: 40px;
+      svg {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
+@media (max-width: 860px) {
+  .menu {
+    order: 1;
+    margin-left: 20px;
+    ul.menu__list {
+      padding: 10px 0;
+    }
+    &__list {
+      transform: translateY(-200%);
+      position: absolute;
+      background-color: #f6f6f6;
+      top: 101px;
+      width: 280px;
+      right: 0;
+      flex-direction: column;
+      align-items: center;
+      z-index: 5;
+      transition: all .3s;
+    
+      &.menu__list--active {
+        transform: translateY(0%);
+        transition: all .3s;
+      }
+    }
+    &__btn {
+      padding: 0;
+      width: 20px;
+      height: 20px;
+      border: none;
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      transition: all .3s;
+      z-index: 6;
+
+      span {
+        width: 100%;
+        height: 2px;
+        background-color: $accent;
+        transition: all .3s;
+        transform: rotateY(0deg);
+      }
+
+      &::after,
+      &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: $accent;
+      }
+
+      &::before {
+        top: 0;
+        transform: rotate(0deg);
+        transition: all .3s;
+      }
+
+      &::after {
+        bottom: 0;
+        transition: all .3s;
+      }
+
+      &.menu__btn--active {
+        transition: all .3s;
+
+        &::before {
+          top: 8px;
+          transform: rotate(45deg);
+          transition: all .3s;
+        }
+
+        &::after {
+          bottom: 10px;
+          transform: rotate(-45deg);
+          transition: all .3s;
+        }
+
+        span {
+          transform: rotateY(90deg);
+          transition: all .3s;
+          width: 0%;
+        }
+      }
+    }
+    &__list-item {
+      &+.menu__list-item {
+        margin-top: 10px;
+        margin-left: 0px;
+      }
+    }
+    &__list-item-link {
+    &:hover,
+    &:focus-visible {
+      &::after {
+        top: 30px;
+      }
+    }
+      &--active {
+        &::after {
+          top: 30px;
+        }
+      }
+    }
+  }
+  .user-nav {
+    margin-left: auto;
+    &__link-box {
+      text-align: right;
+    }
+  }
+}
+@media (max-width: 528px) {
+  .menu {
+    margin-left: 10px;
+  }
+  .user-nav {
+    &__link {
+      display: block;
+      font-size: 14px;
+      &--email {
+        display: none;
+      }
+    }
+    &__box-link {
+      width: 30px;
+      height: 30px;
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
+@media (max-width: 460px) {
+  .menu {
+    &__list-item-link {
+      font-size: 14px;
+    }
+  }
+  .user-nav {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+}
+@media (max-width: 370px) {
+  .menu {
+      margin-left: 20px;
+      &__list {
+        width: 200px;
+      }
+    }
+  .user-nav {
+    &__link-box {
+      display: none;
+    }
+    &__box-link {
+      width: 40px;
+      height: 40px;
+
+      svg {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
