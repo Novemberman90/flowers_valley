@@ -42,15 +42,31 @@ $(function() {
   nextArrow: '<button type="button" class="slick-next"><svg width="60.000000" height="60.000000" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><circle cx="30.000000" cy="30.000000" r="30.000000" fill="" fill-opacity="1.000000"/><circle cx="30.000000" cy="30.000000" r="29.000000" stroke="" stroke-opacity="1.000000" stroke-width="2.000000"/><path id="Vector 1" d="M40 30C37.64 30 31 28.92 31 21M40 30C36.7 30 31 31.8 31 39M40 30L20 30" stroke="" stroke-opacity="1.000000" stroke-width="2.000000"/></svg></button>'
 });
 
-  $('.top-slider__inner').slick({
+  $('.top-slider__wrapper').slick({
   centerMode: true,
   variableWidth: true,
   centerPadding: '60px',
   slidesToShow: 1,
   autoplaySpeed: 5000,
   infinite: true,
+  appendArrows: '.top-slider__arrows',
   prevArrow: '<button type="button" class="slick-prev"><svg width="60.000000" height="60.000000" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><circle r="30.000000" transform="matrix(-1 0 0 1 30 30)" fill="" fill-opacity="1.000000"/><circle r="29.000000" transform="matrix(-1 0 0 1 30 30)" stroke="" stroke-opacity="1.000000" stroke-width="2.000000"/><path id="Vector 1" d="M20 30C22.35 30 29 28.92 29 21M20 30C23.3 30 29 31.8 29 39M20 30L40 30" stroke="" stroke-opacity="1.000000" stroke-width="2.000000"/></svg></button>',
-  nextArrow: '<button type="button" class="slick-next"><svg width="60.000000" height="60.000000" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><circle cx="30.000000" cy="30.000000" r="30.000000" fill="" fill-opacity="1.000000"/><circle cx="30.000000" cy="30.000000" r="29.000000" stroke="" stroke-opacity="1.000000" stroke-width="2.000000"/><path id="Vector 1" d="M40 30C37.64 30 31 28.92 31 21M40 30C36.7 30 31 31.8 31 39M40 30L20 30" stroke="" stroke-opacity="1.000000" stroke-width="2.000000"/></svg></button>'
+  nextArrow: '<button type="button" class="slick-next"><svg width="60.000000" height="60.000000" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><circle cx="30.000000" cy="30.000000" r="30.000000" fill="" fill-opacity="1.000000"/><circle cx="30.000000" cy="30.000000" r="29.000000" stroke="" stroke-opacity="1.000000" stroke-width="2.000000"/><path id="Vector 1" d="M40 30C37.64 30 31 28.92 31 21M40 30C36.7 30 31 31.8 31 39M40 30L20 30" stroke="" stroke-opacity="1.000000" stroke-width="2.000000"/></svg></button>',
+  responsive: [
+  {
+    breakpoint: 768,
+    settings: {
+      variableWidth: false,
+    }
+  },
+  {
+    breakpoint: 460,
+    settings: {
+      centerPadding: '30px',
+      variableWidth: false,
+    }
+  },
+]
 });
 
 });
