@@ -967,6 +967,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    flex-wrap: wrap;
   }
   &__title {
     @extend %manrope-300;
@@ -985,25 +986,36 @@
       left: 0;
     }
   }
-  &__item-link{
-    @extend %manrope-400;
-    font-size:17px;
-    line-height: 28px;
-    color: $title;
-    padding-left: 22px;
+  &__item {
+    min-width: 105px;
+    & + .footer__item {
+      margin-left: 10px;
+    }
+  }
+  &__list {
+    display: flex;
+  }
+  &__list-item {
     position: relative;
+    & +.footer__list-item {
+      margin-left: 30px;
+    }
     &::before {
       position: absolute;
-      content:'';
+      content: '';
       background-image: url('../images/icon/about-decor.svg');
       width: 12px;
       height: 24px;
       top: 0;
       left: 0;
     }
-    & +.footer__item-link {
-      margin-left: 30px;
-    }
+  }
+  &__item-link{
+    @extend %manrope-400;
+    font-size:17px;
+    line-height: 28px;
+    color: $title;
+    padding-left: 22px;
   }
   &__powered {
     position: absolute;

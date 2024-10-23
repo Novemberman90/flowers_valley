@@ -16,6 +16,13 @@
       }
     }
   }
+  .footer {
+    &__list-item {
+     & +.footer__list-item {
+      margin-left: 20px;
+     }
+    }
+  }
 }
 @media (max-width: 1180px) {
   .header {
@@ -42,6 +49,17 @@
     }
     &__box {
       gap: 10px;
+    }
+  }
+  .footer {
+    &__item-link {
+      font-size: 15px;
+      padding-left: 20px;
+    }
+    &__list-item {
+      &+.footer__list-item {
+        margin-left: 10px;
+      }
     }
   }
 }
@@ -86,6 +104,32 @@
       svg {
         width: 40px;
         height: 40px;
+      }
+    }
+  }
+  .footer {
+    &__list {
+      display: block;
+    }
+    &__item {
+    .user-nav {
+        margin-left: 0;
+    
+        &__box-link {
+          width: 50px;
+          height: 50px;
+    
+          svg {
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+    }
+    &__list-item {
+      &+.footer__list-item {
+        margin-top: 10px;
+        margin-left:0;
       }
     }
   }
@@ -225,6 +269,25 @@
       }
     }
   }
+  .footer {
+    &__title {
+      font-size: 20px;
+      line-height: 1.2;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+    &__item {
+      width: 100%;
+      margin-bottom: 20px;
+      & + .footer__item {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+        width: auto;
+      }
+    }
+  }
 }
 @media (max-width: 460px) {
   .menu {
@@ -237,6 +300,7 @@
     gap: 10px;
   }
 }
+
 @media (max-width: 370px) {
   .menu {
       margin-left: 20px;
