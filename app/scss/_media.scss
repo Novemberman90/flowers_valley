@@ -1,3 +1,4 @@
+
 @media (max-width: 1400px) {
   .menu {
     &__list-item {
@@ -23,11 +24,21 @@
      }
     }
   }
+  .about {
+    &__item {
+      max-width: 430px;
+    }
+  }
 }
 @media (max-width: 1380px) {
   .top-slider {
     &__box-text {
       padding: 0 25px;
+    }
+  }
+  .about {
+    &__item {
+      max-width: 385px;
     }
   }
 }
@@ -38,6 +49,11 @@
     }
     &__box-text {
       padding: 0 10px;
+    }
+  }
+  .about {
+    &__item {
+      max-width: 365px;
     }
   }
 }
@@ -92,12 +108,26 @@
       line-height: 1.4;
     }
   }
+  .about {
+    &__item {
+      max-width: 305px;
+    }
+    &__item-title {
+      font-size: 28px;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+    &__item-text {
+      font-size: 16px;
+    }
+    &__list-item {
+      font-size: 16px;
+      padding-left: 20px;
+    }
+  }
 }
 @media (max-width: 990px) {
   .header {
-    &__inner {
-      padding: 20px 20px;
-    }
     &__title {
       font-size: 16px;
       line-height: 1.2;
@@ -172,6 +202,25 @@
 
     &__box-text {
       font-size: 18px;
+    }
+  }
+  .about {
+    &__item {
+      max-width: 260px;
+    }
+
+    &__item-title {
+      font-size: 26px;
+    }
+
+    &__item-text {
+      font-size: 15px;
+    }
+    &__content-inner {
+      gap: 20px;
+    }
+    &__list-item {
+      font-size: 14px;
     }
   }
 }
@@ -302,6 +351,35 @@
       line-height: 32px;
     }
   }
+  .about {
+    &__items {
+      justify-content: center;
+    }
+    &__item {
+      max-width: 440px;
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__item-title {
+      font-size: 32px;
+    }
+
+    &__item-text {
+      font-size: 17px;
+    }
+    &__content-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__list-item {
+      font-size: 18px;
+    }
+  }
 }
 @media (max-width: 768px) {
   .top-slider {
@@ -326,6 +404,11 @@
       font-size: 24px;
       line-height: 1.2;
       margin-bottom: 10px;
+    }
+  }
+  .about {
+    &__list-item {
+      font-size: 16px;
     }
   }
 }
@@ -422,6 +505,23 @@
     }
   }
   }
+  .about {
+    &__item-box {
+      padding-top: 0;
+    }
+    &__item-title {
+      font-size: 28px;
+    }
+
+    &__item-text {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+    &__list-item {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  }
 }
 
 @media (max-width: 370px) {
@@ -459,6 +559,11 @@
     }
     &__item-link {
       font-size: 15px;
+    }
+  }
+  .about {
+    &__item-title {
+      font-size: 26px;
     }
   }
 }
