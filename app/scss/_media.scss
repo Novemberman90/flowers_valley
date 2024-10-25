@@ -68,6 +68,17 @@
       font-size: 15px;
     }
   }
+  .gallery {
+    &__content {
+      gap: 30px;
+    }
+  }
+  .art {
+    &__item-img {
+      width: 50%;
+      margin-right: 30px;
+    }
+  }
 }
 @media (max-width: 1240px) {
   .top-slider {
@@ -210,6 +221,21 @@
       padding: 30px 30px 60px 30px;
     }
   }
+  .art {
+    &__item {
+      display: block;
+      margin-bottom: 50px;
+    }
+    &__item-img {
+      margin-right: 0;
+      margin-bottom: 30px;
+      height: auto;
+    }
+    &__item-img,
+    &__item-box {
+      width: 100%;
+    }
+  }
 }
 @media (max-width: 990px) {
   .header {
@@ -320,6 +346,14 @@
     }
     &__item-text {
       font-size: 16px;
+    }
+  }
+  .gallery {
+    &__content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 60px;
     }
   }
 }
@@ -603,6 +637,11 @@
       font-size: 16px;
     }
   }
+  .art {
+    &__box-title {
+      font-size: 26px;
+    }
+  }
 }
 @media (max-width: 528px) {
   .menu {
@@ -812,6 +851,23 @@
       font-size: 14px;
     }
   }
+  .art {
+    &__box-title {
+    font-size: 22px;
+    line-height: 1.4;
+    }
+    &__box-text {
+      font-size: 15px;
+      line-height: 1.4;
+    }
+    ul.art__list {
+      li {
+        margin-left: 20px;
+        font-size: 15px;
+        line-height: 1.4;
+      }
+    } 
+  }
 }
 
 @media (max-width: 370px) {
@@ -899,6 +955,22 @@
     }
     &__item-video-box {
       padding: 20px;
+    }
+  }
+  .art {
+    &__box-title {
+      font-size: 20px;
+    }
+
+    &__box-text {
+      font-size: 14px;
+    }
+
+    ul.art__list {
+      li {
+        margin-left: 10px;
+        font-size: 14px;
+      }
     }
   }
 }

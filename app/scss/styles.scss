@@ -770,9 +770,8 @@
     }
   }
   &__content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 60px;
   }
   &__item {
@@ -828,14 +827,13 @@
     }
   }
   &__item-img {
-    max-width: 660px;
-    width: 100%;
+    width: 660px;
     height: 400px;
     object-fit: cover;
+    margin-right: 60px;
   }
   &__item-box {
-    max-width: 660px;
-    width: 100%;
+    width: 660px;
   }
   &__box-title {
     @extend %lora-400;
