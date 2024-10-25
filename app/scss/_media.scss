@@ -47,6 +47,15 @@
       line-height: 1.4;
     }
   }
+  .together {
+    &__item-title {
+      font-size: 22px;
+      margin-right: 30px;
+    }
+    &__item-text {
+      font-size: 16px;
+    }
+  }
 }
 @media (max-width: 1240px) {
   .top-slider {
@@ -60,6 +69,11 @@
   .about {
     &__item {
       max-width: 365px;
+    }
+  }
+  .together {
+    &__title {
+      font-size: 40px;
     }
   }
 }
@@ -146,6 +160,23 @@
     }
     &__item-text {
       font-size: 15px;
+    }
+  }
+  .together {
+    &__inner {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__title {
+      text-align: center;
+      &::after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    &__content {
+      margin-right: 0;
+      margin-bottom: 50px;
     }
   }
 }
@@ -428,6 +459,19 @@
       padding: 30px 30px;
     }
   }
+  .together {
+    &__item-title {
+      margin-right: 20px;
+    }
+    &__form-box {
+      background-image: none;
+      padding: 0;
+    }
+    &__form {
+      padding: 20px;
+      gap: 40px;
+    }
+  }
 }
 @media (max-width: 650px) {
   .top-slider {
@@ -539,6 +583,34 @@
       font-size: 22px;
     }
   }
+  .together {
+    &__item-title {
+      font-size: 18px;
+    }
+    &__item-text {
+      line-height: 1.2;
+      font-size: 14px;
+    }
+    &__form-title {
+      font-size: 24px;
+    }
+    &__form-input {
+      padding: 10px;
+      font-size: 16px;
+      line-height: 1.2;
+    }
+    &__form-content {
+      display: block;
+    }
+    &__form-btn {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 10px 48px 10px 30px;
+    }
+    &__form-text {
+      font-size: 14px;
+    }
+  }
 }
 @media (max-width: 460px) {
   .menu {
@@ -586,6 +658,24 @@
   .howtowork {
     &__item {
       height: 150px;
+    }
+  }
+  .together {
+    &__title {
+      font-size: 35px;
+      text-align: left;
+      &::after {
+        left: 55px;
+      }
+    }
+    &__item {
+      display: block;
+    }
+    &__item-title {
+      margin-right: 0;
+    }
+    &__form-title {
+      font-size: 22px;
     }
   }
 }
@@ -639,5 +729,26 @@
      &__item-text {
       font-size: 14px;
      }
+  }
+  .together {
+    &__title {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+    &__form {
+      padding: 0;
+      border: none;
+    }
+    &__form-title {
+      font-size: 20px;
+    }
+    &__form-label  {
+      span {
+        font-size: 14px;
+      }
+    }
+    &__form-text {
+      width: 100%;
+    }
   }
 }

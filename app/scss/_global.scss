@@ -41,16 +41,11 @@ button {
 .title {
   font-size: 50px;
   line-height: 64px;
-  text-align: center;
   @extend %lora-400;
   display: block;
 }
 
 .title-left {
-  font-size: 50px;
-  line-height: 64px;
-  text-align: center;
-  @extend %lora-400;
   display: block;
   position: relative;
   padding-bottom: 20px;
@@ -70,4 +65,23 @@ button {
       @extend %lora-it-400;
       color: $accent;
     }
+}
+.title-center {
+  text-align: center;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: '';
+    width: 105px;
+    height: 1px;
+    border: 1px solid $accent;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
+
+  span {
+    @extend %lora-it-400;
+    color: $accent;
+  }
+}

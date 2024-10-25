@@ -226,22 +226,8 @@
   padding-bottom: 32px;
   &__title {
    padding-bottom: 20px;
-   position: relative;
    margin-bottom: 50px;
-   &::after {
-    position: absolute;
-    content: '';
-    width: 105px;
-    height: 1px;
-    border: 1px solid $accent;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-   }
-    span {
-      @extend %lora-it-400;
-      color: $accent;
-    }
+
   }
   &__items {
     display: flex;
@@ -336,7 +322,7 @@
 }
 .howtowork {
   padding-top: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 150px;
   &__title {
     padding-bottom: 20px;
     position: relative;
@@ -416,20 +402,28 @@
   }
 }
 .together {
-  padding-top: 100px;
+  padding: 100px 0 90px;
   border-top: 1px solid rgb(219, 219, 248);
   border-bottom:1px solid rgb(219, 219, 248);
   &__inner {
-    padding: 90px 0;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
   }
+  &__content {
+    max-width: 660px;
+    width: 100%;
+    margin-right: 50px;
+  }
   &__title {
+    @extend %lora-400;
+    font-size: 50px;
+    line-height: 64px;
+    text-align: center;
     margin-bottom: 50px;
   }
   &__list {
-    width: 660px;
+    width: 100%;
   }
   &__item {
     display: flex;
@@ -438,14 +432,16 @@
       margin-top: 30px;
     }
   }
-  &__item-title {
+  &__item-title,
+  &__item-text {
     @extend %lora-400;
+    max-width: 300px;
+    width: 100%;
+  }
+  &__item-title {
     font-size: 24px;
     line-height: 32px;
-  }
-  &__item-text {
-    @extend %manrope-400;
-    width: 300px;
+    margin-right: 60px;
   }
   &__form-box {
     background-size: contain;
@@ -454,7 +450,8 @@
     padding: 60px 0 60px 60px;
   }
   &__form {
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
     padding: 60px;
     border-radius: 3px;
     border: 1px solid $accent;
@@ -493,7 +490,7 @@
     font-size: 18px;
     line-height: 28px;
     color: $text;
-    padding: 16px 0px 16px 20px;
+    padding: 16px 10px 16px 20px;
     border:1px solid $accent;
     width: 100%;
   }
