@@ -536,6 +536,14 @@
       gap: 40px;
     }
   }
+  .gallery {
+    &__top-box {
+      display: block;
+    }
+    &__title {
+      margin-bottom: 20px;
+    }
+  }
 }
 @media (max-width: 650px) {
   .top-slider {
