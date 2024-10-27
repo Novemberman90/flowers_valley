@@ -806,7 +806,7 @@
   }
 }
 .art {
-  padding: 150px 0;
+  padding: 150px 0 100px;
   &__title {
     margin-bottom: 20px;
     &.title-left::after {
@@ -872,18 +872,27 @@
 }
 
 .contact {
-  padding: 60px;
-  border: 1px solid $accent;
-  border-radius: 3px;
+  position: relative;
+  height: calc(100vh - 100px);
   &__inner {
     display: flex;
     justify-content: space-between;
+    padding: 60px 58px;
+    border: 1px solid $accent;
+    border-radius: 3px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -62px;
+    left: 0;
+    right: 0;
   }
   &__content {
     border: 1px solid #dbdbf8;
     border-radius: 3px;
-    width: 660px;
+    max-width: 660px;
+    width: 100%;
     height: 450px;
+    margin-right: 60px;
     padding: 50px 60px 55px 60px ;
   }
   &__title {
@@ -928,12 +937,14 @@
   &__link-walking,
   &__link-car,
   &__link-bus{
+    display: inline-block;
     &::before {
       position: absolute;
       content: '';
       width: 32px;
       height: 32px;
-      top: 0;
+      top: 50%;
+      transform: translateY(-50%);
       left: 0;
     }
   }
@@ -960,8 +971,9 @@
   &__tel {
     @extend %lora-400;
     font-size: 32px;
-    line-height: 1px;
+    line-height: 41px;
     color: #303040;
+    display: inline-block;
     span{
       color:$accent;
     }
@@ -973,18 +985,21 @@
     color: $accent;
     position: relative;
     padding-left: 42px;
+    display: inline-block;
     &::before {
       position: absolute;
       content: '';
       background-image: url('../images/icon/email.svg');
-      top: 0;
+      top: 50%;
+      transform: translateY(-50%);
       left: 0;
       width: 32px;
       height: 32px;
     }
   }
   &__map {
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
     height: 450px;
 
     #map {
@@ -994,8 +1009,18 @@
   }
 }
 .footer {
-  padding: 60px 0 90px;
+  padding: 120px 0 90px;
   position: relative;
+  &::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: rgb(219, 219, 248);
+    top: 0;
+    z-index: -1;
+  }
+ /*  border-top: 1px solid rgb(219, 219, 248); */
   &__inner {
     display: flex;
     justify-content: space-between;
