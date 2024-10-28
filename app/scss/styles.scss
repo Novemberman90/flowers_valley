@@ -874,8 +874,6 @@
 }
 
 .contact {
-  position: relative;
-  height: calc(100vh - 100px);
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -883,7 +881,7 @@
     border: 1px solid $accent;
     border-radius: 3px;
     background-color: #fff;
-    position: absolute;
+    position: relative;
     bottom: -62px;
     left: 0;
     right: 0;
