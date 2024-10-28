@@ -5,20 +5,22 @@ $(function() {
     $('html').toggleClass('lock');
   });
 
-  $(document).on('click', function() {
-    if(!$(e.target).closest('.menu__list, .menu__btn').length) {
-    $('.menu__list').removeClassClass('menu__list--active');
-    $('.menu__btn').removeClassClass('menu__btn--active');
-    $('html').removeClassClass('lock');
+  $(document).on('click', function(e) {
+    if (!$(e.target).closest('.menu__list, .menu__btn').length) {
+    $('.menu__list').removeClass('menu__list--active');
+    $('.menu__btn').removeClass('menu__btn--active');
+    $('html').removeClass('lock');
     }
   });
 
-  $(".menu a").on("click", function (event) {
+  $('.menu a').on('click', function (event) {
   event.preventDefault();
   var id  = $(this).attr('href'),
       top = $(id).offset().top;
   $('body,html').animate({scrollTop: top}, 1500);
-
+  $('.menu__list').removeClass('menu__list--active');
+  $('.menu__btn').removeClass('menu__btn--active');
+  $('html').removeClass('lock');
   });
 
     $(".star").rateYo({

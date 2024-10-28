@@ -1,12 +1,11 @@
 html,
 body {
   height: 100%;
-}
-html {
   &.lock {
-  overflow: hidden;
+    overflow: hidden;
   }
 }
+
 body {
   font-size: 17px;
   line-height: 28px;
@@ -83,5 +82,27 @@ button {
   span {
     @extend %lora-it-400;
     color: $accent;
+  }
+}
+
+@media (max-width: 860px) {
+  .title {
+    font-size: 44px;
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 40px;
+    line-height: 1.4;
+  }
+}
+@media (max-width: 528px) {
+  .title {
+    font-size: 34px;
+  }
+}
+@media (max-width: 460px) {
+  .title {
+    font-size: 30px;
   }
 }
