@@ -16,11 +16,16 @@ $(function() {
   $('.menu a').on('click', function (event) {
   event.preventDefault();
   var id  = $(this).attr('href'),
-      top = $(id).offset().top;
-  $('body,html').animate({scrollTop: top}, 1500);
-  $('.menu__list').removeClass('menu__list--active');
-  $('.menu__btn').removeClass('menu__btn--active');
-  $('html').removeClass('lock');
+      target = $(id);
+      
+  if (target.length) {
+    var top = target.offset().top - 100; // Отнимаем 100px высоты шапки
+    $('html, body').animate({scrollTop: top}, 1500);
+
+    $('.menu__list').removeClass('menu__list--active');
+    $('.menu__btn').removeClass('menu__btn--active');
+    $('html').removeClass('lock');
+  }
   });
 
     $(".star").rateYo({
