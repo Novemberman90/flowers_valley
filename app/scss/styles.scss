@@ -39,12 +39,15 @@
   &__list {
     display: flex;
   }
-  &__list-item {
-    & +.menu__list-item {
+  &__item {
+    & +.menu__item {
       margin-left: 90px;
     }
+    &:last-child {
+      display: none;
+    }
   }
-  &__list-item-link {
+  &__item-link {
     @extend %manrope-400;
     color: $text;
     position: relative;

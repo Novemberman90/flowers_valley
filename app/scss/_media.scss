@@ -14,7 +14,7 @@
 }
 @media (max-width: 1400px) {
   .menu {
-    &__list-item {
+    &__item {
       &+.menu__list-item {
         margin-left: 25px;
       }
@@ -44,6 +44,13 @@
   }
 }
 @media (max-width: 1380px) {
+  .menu {
+    &__item {
+     & +.menu__item {
+      margin-left: 60px;
+     }
+    }
+  }
   .top-slider {
     &__box-text {
       padding: 0 25px;
@@ -122,6 +129,18 @@
   }
 }
 @media (max-width: 1240px) {
+  .menu {
+    &__item {
+      &+.menu__item {
+        margin-left: 30px;
+      }
+    }
+  }
+  .user-nav {
+    &__link {
+      font-size: 20px;
+    }
+  }
   .top-slider {
     &__box-title {
       font-size: 60px;
@@ -150,7 +169,7 @@
     }
   }
   .menu {
-    &__list-item {
+    &__item {
       &+.menu__list-item {
         margin-left: 15px;
       }
@@ -302,12 +321,12 @@
     }
   }
   .menu {
-    &__list-item {
-      &+.menu__list-item {
+    &__item {
+      &+.menu__item {
         margin-left: 10px;
       }
     }
-    &__list-item-link {
+    &__item-link {
       font-size: 16px;
       line-height: 1.2;
     }
@@ -317,7 +336,7 @@
       margin-right: 10px;
     }
     &__link {
-      font-size: 16px;
+      font-size: 15px;
       line-height: 1.2;
       &+.user-nav__link {
         margin-left: 10px;
@@ -565,13 +584,13 @@
         }
       }
     }
-    &__list-item {
-      &+.menu__list-item {
+    &__item {
+      &+.menu__item {
         margin-top: 10px;
         margin-left: 0px;
       }
     }
-    &__list-item-link {
+    &__item-link {
     &:hover,
     &:focus-visible {
       &::after {
@@ -807,22 +826,24 @@
 @media (max-width: 528px) {
   .menu {
     margin-left: 10px;
+    &__item {
+      &:last-child {
+        display: block;
+        text-align: center;
+        .user-nav__link + .user-nav__link {
+          margin-left: 0;
+          margin-top: 10px;
+        }
+      }
+    }
   }
   .user-nav {
     &__link {
       display: block;
       font-size: 14px;
-      &--email {
-        display: none;
-      }
     }
-    &__box-link {
-      width: 30px;
-      height: 30px;
-      svg {
-        width: 30px;
-        height: 30px;
-      }
+    &__link-box {
+      display: none;
     }
   }
   .footer {
@@ -916,7 +937,7 @@
 }
 @media (max-width: 460px) {
   .menu {
-    &__list-item-link {
+    &__item-link {
       font-size: 14px;
     }
   }
