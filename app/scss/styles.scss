@@ -178,9 +178,6 @@
     width: 60px;
     background-color: transparent;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    &:focus {
-      outline: none;
-    }
     svg {
       circle {
         fill: #fafafa;
@@ -189,6 +186,19 @@
       path {
         stroke: #5D5FEF;
       }
+      }
+      &:hover,
+      &:active {
+        svg {
+          circle {
+            fill: #5D5FEF;
+            stroke: #fafafa;
+          }
+
+          path {
+            stroke: #fafafa;
+          }
+        }
       }
     }
   &__item {
@@ -742,15 +752,29 @@
         width: 60px;
         height: 60px;
         padding: 0;
-      }
-      svg {
-        circle {
-          fill: #fafafa;
-          stroke: #5D5FEF;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        svg {
+          circle {
+            fill: #fafafa;
+            stroke: #5D5FEF;
+          }
+  
+          path {
+            stroke: #5D5FEF;
+          }
         }
-
-        path {
-          stroke: #5D5FEF;
+        &:hover,
+        &:active {
+            svg {
+            circle {
+              fill: #5D5FEF;
+              stroke: #fafafa;
+            }
+        
+            path {
+              stroke: #fafafa;
+            }
+          }
         }
       }
     }
