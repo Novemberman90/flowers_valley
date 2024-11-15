@@ -505,7 +505,7 @@
       padding: 10px 0;
     }
     &__list {
-      transform: translateY(-200%);
+      transform: translateX(200%);
       position: absolute;
       background-color: #f6f6f6;
       top: 101px;
@@ -517,7 +517,7 @@
       transition: all .3s;
     
       &.menu__list--active {
-        transform: translateY(0%);
+        transform: translateX(0%);
         transition: all .3s;
       }
     }
@@ -527,6 +527,7 @@
       height: 20px;
       border: none;
       background-color: transparent;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
       display: flex;
       justify-content: center;
       align-items: center;
