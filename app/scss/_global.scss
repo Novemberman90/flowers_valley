@@ -1,10 +1,7 @@
 html,
 body {
   height: 100%;
-  overflow-x: hidden;
-  &.lock {
-    overflow: hidden;
-  }
+
 }
 
 body {
@@ -14,6 +11,9 @@ body {
   flex-direction: column;
   background-color: #fff;
   color: $text;
+  &.lock {
+    overflow: hidden;
+  }
 }
 button {
   background-color:transparent;

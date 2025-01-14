@@ -1,15 +1,21 @@
 $(function() {
+  $(function () {
+    // Инициализация WOW.js
+    new WOW().init();
+});
+
+
   $('.menu__btn').on('click', function() {
     $('.menu__list').toggleClass('menu__list--active');
     $('.menu__btn').toggleClass('menu__btn--active');
-    $('html').toggleClass('lock');
+    $('body').toggleClass('lock');
   });
 
   $(document).on('click', function(e) {
     if (!$(e.target).closest('.menu__list, .menu__btn').length) {
     $('.menu__list').removeClass('menu__list--active');
     $('.menu__btn').removeClass('menu__btn--active');
-    $('html').removeClass('lock');
+    $('body').removeClass('lock');
     }
   });
 
@@ -24,7 +30,7 @@ $(function() {
 
     $('.menu__list').removeClass('menu__list--active');
     $('.menu__btn').removeClass('menu__btn--active');
-    $('html').removeClass('lock');
+    $('body').removeClass('lock');
   }
   });
 
